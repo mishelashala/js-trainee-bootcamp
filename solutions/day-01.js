@@ -90,10 +90,14 @@ sortString("david"); // 'addiv'
 function arePalindromes(a, b) {
   const sortedA = a
     .split(" ")
+    .join("")
+    .split("")
     .sort()
     .join("");
   const sortedB = a
     .split(" ")
+    .join("")
+    .split("")
     .sort()
     .join("");
 
