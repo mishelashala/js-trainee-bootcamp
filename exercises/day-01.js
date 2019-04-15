@@ -56,3 +56,35 @@ logArray([1, 2, 3, 4, 5]);
 // 3
 // 4
 // 5
+
+// CODE CHALLENGES
+
+// Write a function called reverseString that
+// takes a string as an argument and
+// returns it reversed
+function reverseString(str) {
+  // @TODO
+}
+
+reverseString("hola"); // aloh
+
+// Write a function called sortString that
+// takes a string as an argument and
+// returns it sorted alphabetically
+function sortString(str) {
+  // @TODO
+}
+
+sortString("david"); // 'addiv'
+
+// Write a function called arePalindromes that
+// takes two strings as arguments and
+// return true if one is the palindrome
+// of the other returns returns false otherwise
+function arePalindromes(a, b) {
+  // @TODO
+}
+
+arePalindromes("anita lava la tina", "anit al aval atina"); // true
+arePalindromes("avid", "diva"); // true
+arePalindromes("juan", "jose"); // false
