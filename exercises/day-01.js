@@ -57,6 +57,43 @@ logArray([1, 2, 3, 4, 5]);
 // 4
 // 5
 
+// Declare a function called Car and three
+// strings as its arguments, brand, model and year
+// and execute it as a function as constructor
+// to generate a car object with the
+// properties model and year.
+function Car(brand, model, year) {
+  // @TODO
+}
+
+var teslaS = new Car(/* @TODO */);
+
+// Let calculateRectanglePerimenter be a function
+// returns the perimeter when its applied to
+// a rectangle object.
+function calculateRectanglePerimeter() {
+  // @TODO
+}
+
+calculateRectanglePerimeter.apply({
+  height: 2,
+  width: 2
+}); // 8
+
+// Write a function called calculateCirclePerimeter
+// and create another function called boundCalculateCirclePerimeter
+// that is the result of binding the first function
+// to a circle object
+function calculateCirclePerimeter() {
+  // @TODO
+}
+
+var boundCalculateCirclePerimeter = calculateCirclePerimeter.bind({
+  radius: 2
+});
+
+boundCalculateCirclePerimeter(); // ~ 12.56
+
 // CODE CHALLENGES
 
 // Write a function called reverseString that
