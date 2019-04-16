@@ -259,4 +259,3 @@ list.pop();
 
 // error
 list = [5,6,7]
-
