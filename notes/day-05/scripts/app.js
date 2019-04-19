@@ -237,6 +237,6 @@
     todoList.innerHTML = "";
 
     // let's add the message to the todo list on the screen
-    todoList.appendChild(empty);
+    todoList.appendChild(message);
   }
 })(window);
