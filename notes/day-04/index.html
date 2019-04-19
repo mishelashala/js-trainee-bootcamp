@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <title>First example</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!--
+        form
+        use is gonna input some data
+        application should something with that data
+    -->
+
+    <!--
+        display: inline, inline-block, block
+        inline: no margin, other elements can be in the same row
+        block: margin, take as much space as posible, fill blank space with margin, other elements cannot be in the same row
+        inline-block: margin, padding, border, doesn't try to ocuppy all available space
+    -->
+
+    <form id="user-form" class="user-form">
+      <div>
+        <label class="user-label" for="name">Name</label>
+        <input
+          id="user-name"
+          class="user-input"
+          name="name"
+          placeholder="Please enter your name"
+          type="text"
+        />
+
+        <label class="user-label" for="age">Age</label>
+        <input
+          id="user-age"
+          class="user-input"
+          name="age"
+          placeholder="Please enter your age"
+          type="number"
+          min="0"
+        />
+      </div>
+      <button class="user-submit">Send data</button>
+    </form>
+
+    <script async defer src="./app.js"></script>
+  </body>
+</html>

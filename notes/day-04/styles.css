@@ -1,0 +1,35 @@
+/*
+            1. selector
+            2. pair of curly braces
+            3. styles to apply
+        */
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+.user-form {
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 16px;
+  width: 200px;
+}
+.user-input {
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  padding: 4px 8px;
+  width: 100%;
+}
+.user-input:last-child {
+  margin-bottom: 0;
+}
+.user-label {
+  display: block;
+}
+.user-submit {
+  background-color: #e1f7d5;
+  border: none;
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding: 4px;
+  width: 100%;
+}
