@@ -1,6 +1,6 @@
 // A repository is used to "persist" (save) models
 (function(global) {
-  // The place where we store our data. Usually called
+  // The place where we store our data. Usually called...
   // well... data store. In this case we store our data
   // on memory
   var data = [];
@@ -13,8 +13,8 @@
   };
 
   // Wanna find some todo?
-  // if you passs a number to find (the id of the todo)
-  // it will return it that todo in a list
+  // if you passs a number to "find" (the id of the todo)
+  // it will return that todo in a list
   // if you don't pass a number it will give you the entire
   // list of todos
   // find :: Number -> List<TodoModel>
@@ -33,14 +33,15 @@
     return data;
   }
 
-  // Wanna save a new todo or update one that has been
-  // already save?
-  // save takes todo arguments: the todo todo save and
+  // Wanna save a new todo?
+  // Wanna update a todo?
+  // "save" takes todo arguments: the todo to save and
   // the upsert option.
-  // if upsert is true then it will treated as a new todo
-  // and it will just add it to the list.
-  // if upsert is false then it will try to find that todo
-  // on the store and it will updated
+  // if upsert is true then the todo you pass will be
+  // treated as a new todo and it will be added to
+  // the data source.
+  // if upsert is false then it will try to find the todo
+  // on the data store and it will be updated
   // save :: (TodoModel, Boolean) -> TodoModel
   function save(todo, upsert = true) {
     if (upsert) {
@@ -56,7 +57,7 @@
   }
 
   // Wanna remove a todo?
-  // remove takes a todo, it will try to find it
+  // "remove" takes a todo, it will try to find it
   // on the data store. if it finds it it will
   // delete it, otherwhis it will do nothing
   // remove :: Todo -> null
