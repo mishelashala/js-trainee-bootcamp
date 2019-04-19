@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TODO APP</title>
+    <style>
+      .done {
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Todo app</h1>
+    <form id="todo-form">
+      <label for="todo">Todo</label>
+      <input id="todo-input" name="todo" placeholder="Add a todo" type="text" />
+      <button>Add</button>
+    </form>
+
+    <button id="all">All</button>
+    <button id="pending">Pending</button>
+    <button id="done">Done</button>
+    <button id="clear-all-todos">Clear all todos</button>
+
+    <ul id="todo-list"></ul>
+
+    <script src="./scripts/todo-model.js"></script>
+    <script src="./scripts/todo-repository.js"></script>
+    <script src="./scripts/app.js"></script>
+    <script defer>
+      (function(global) {
+        global.addEventListener("load", global.app.init);
+      })(window);
+    </script>
+  </body>
+</html>
