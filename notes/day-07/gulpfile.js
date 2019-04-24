@@ -2,6 +2,7 @@ const { series, watch } = require("gulp");
 const pug = require("gulp-pug");
 const stylus = require("gulp-stylus");
 const browserify = require("gulp-browserify");
+const cleanCSS = require("gulp-clean-css");
 const gulp = require("gulp");
 
 /**
@@ -40,6 +41,13 @@ function devJs() {
       })
     )
     .pipe(gulp.dest("./public/js"));
+}
+
+function copyCss() {
+  return gulp
+    .src("src/normalize.css")
+    .pipe(cleanCSS({ compatibility: "ie8" }))
+    .pipe(gulp.dest("public/vendor/"));
 }
 
 /**
@@ -83,4 +91,4 @@ function prodJs() {
 
 exports.build = series(prodHtml, prodCss, prodJs);
 
-exports.default = series(devHtml, devCss, devJs, devWatch);
+exports.default = series(copyCss, devHtml, devCss, devJs, devWatch);
