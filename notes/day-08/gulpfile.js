@@ -62,6 +62,6 @@ function prodCss() {
     .pipe(gulp.dest("public"));
 }
 
-exports.build = series(prodHtml, prodCss);
+exports.build = series(copyCss, prodHtml, prodCss);
 
 exports.default = series(copyCss, devHtml, devCss, devWatch);
