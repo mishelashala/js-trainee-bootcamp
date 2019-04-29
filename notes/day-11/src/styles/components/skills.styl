@@ -1,0 +1,26 @@
+@require "../base/colors.styl";
+@require "../base/fonts.styl";
+@require "../base/units.styl";
+
+.skills
+    &__container
+        background-color: $background_gray
+        box-sizing: border-box
+        display: flex
+        justify-content: space-evenly
+        padding: $double_padding $normal_padding
+        margin: 0;
+        width: 100%
+    
+    &__item
+        border-radius: 100%
+        margin: 0 auto
+        height: 4rem
+        width: 4rem
+
+        &:first-child
+            background-color: $circle_purple
+        &#js
+            background-color: $circle_orange
+        &#react
+            background-color: $circle_green

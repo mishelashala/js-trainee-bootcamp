@@ -1,0 +1,19 @@
+@require "../base/colors.styl";
+@require "../base/fonts.styl";
+@require "../base/units.styl";
+
+.header
+  background-color: $background_white
+  border-top: 0.375rem solid $border_green
+  border-bottom: 0.125rem solid $border_gray
+
+  &__container
+    box-sizing: border-box
+    margin: 0 auto
+    padding: $normal_padding
+    width: 100% // fluid layout
+
+  &__name
+    color: $text_color
+    font-family: $text_font
+    margin: 0
