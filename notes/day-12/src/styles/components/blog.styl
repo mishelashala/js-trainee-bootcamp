@@ -1,0 +1,61 @@
+@require "../base/colors.styl";
+@require "../base/fonts.styl";
+@require "../base/units.styl";
+@require "../base/container.styl";
+
+/**
+ * Mobile / Base Styles
+ */
+.blog
+    background-color: $background_dark
+
+    &__container
+        @extend .g-container
+        text-align: center
+    
+    &__title,
+    &__date
+        color: $white_text
+        font-family: $text_font
+        text-align: center
+        margin: 0
+
+    &__date
+        font-size: 0.75rem
+        font-weight: 100
+        margin-top: 0.5rem
+
+    &__read
+        background-color: $background_purple
+        border: none
+        color: $white_text
+        display: inline-block
+        font-size: 0.8rem
+        font-family: $text_font
+        margin-top: $double_margin
+        padding: 0.5rem $normal_padding
+    
+    &__picture
+        height: 15rem
+        display: none
+
+/**
+ * Tablet Styles
+ */
+@media screen and (min-width: $tablet_width)
+    .blog
+        &__container
+            align-items: center
+            display: flex
+            justify-content: center
+            flex-direction: column
+            padding: 0
+
+        &__picture
+            display: block
+            padding: 0
+
+        &__image
+            height: 15rem
+            object-fit: cover
+            width: 100%;

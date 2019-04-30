@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "isomorphic-fetch": "^2.2.1"
-  },
-  "devDependencies": {
-    "gulp-server-livereload": "^1.9.2"
-  }
-}
