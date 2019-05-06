@@ -16,6 +16,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/users", usersRouter);
 
+app.get("/", (req, res) => {
+  res.render("index");
+});
+
 app.use((_req, res) => {
   res.send("not found!");
 });
