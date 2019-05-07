@@ -15,7 +15,7 @@ const updateUsername = (oldUsername, newUsername) => {
 };
 
 const deleteUsername = username => {
-  const index = usernameList.findIndex(un => oldUsername === un);
+  const index = usernameList.findIndex(un => username === un);
   usernameList.splice(index, 1);
 };
 
