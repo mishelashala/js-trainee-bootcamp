@@ -1,0 +1,6 @@
+extends templates/layout.pug
+
+block content
+  form(action="/users", method="POST")
+    input(name="username", placeholder="Add a user name", type="text")
+    button Add username

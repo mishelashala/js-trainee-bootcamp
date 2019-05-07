@@ -1,0 +1,14 @@
+extends templates/layout.pug
+
+block content
+    div
+        a(href='/') add username
+    p user list:
+    ul
+        each username in usernameList
+            li=username
+                a(href="/users/" + username) view
+                span - 
+                a(href="/users/" + username + "/edit") edit
+                span - 
+                a(href='/users/'+ username + "/delete") delete
