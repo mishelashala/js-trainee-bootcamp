@@ -1,0 +1,9 @@
+extend templates/layout.pug
+
+block styles
+    link(href='/css/styles.css', rel='stylesheet')
+
+block content
+    div
+        a(href='/') add username
+    p(class="error")=message

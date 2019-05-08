@@ -1,0 +1,7 @@
+extends templates/layout.pug
+
+block content
+    form(action="/users/" + username + "/delete", method="POST")
+        p Are you sure that you want to delete #{username}?
+        a(href='/users') Cancel
+        button Delete Username
